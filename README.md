@@ -102,3 +102,130 @@ Then run the full script including the `modify_nose_front()` function and `gr.In
 ## 📬 Contact
 
 For enhancements, multi-angle support, or integrating custom diffusion models, feel free to reach out.
+
+
+For Both side view and front view code 
+# 🧠 Rhinoplasty AI – Nose Style Modification using Stable Diffusion
+
+Rhinoplasty AI is an AI-powered image editing tool that allows users to modify the nose shape in **front-view** or **side-view** face images using **Stable Diffusion Inpainting**. It supports multiple common nose styles and leverages automatic facial landmark or side-profile detection for localized editing.
+
+---
+
+## 🚀 Features
+
+- Modify nose shapes in front or side facial images  
+- Automatic detection of nose region using Dlib or OpenCV  
+- Uses Stable Diffusion v2 Inpainting model for high-quality edits  
+- Supports 10 popular nose styles for each view  
+- Web-based interface using Gradio  
+
+---
+
+## 🖥️ Demo
+
+To run the interface:
+
+```bash
+python app.py
+
+pip install torch torchvision torchaudio
+pip install diffusers transformers
+pip install opencv-python dlib
+pip install gradio
+pip install Pillow
+
+
+🔍 Model Downloads
+The project uses:
+
+Dlib Facial Landmark Model: Download the file and place in the correct path:
+
+shape_predictor_68_face_landmarks.dat
+
+Extract and save to: /content/drive/My Drive/shape_predictor_68_face_landmarks.dat
+
+OpenCV RetinaFace-like Model (for side view):
+These are downloaded automatically by the script:
+
+deploy.prototxt
+
+res10_300x300_ssd_iter_140000.caffemodel
+
+🎨 Nose Styles Supported
+Front View
+Small
+
+Sharp
+
+Round
+
+Wide
+
+Natural
+
+Pointed
+
+Button
+
+Greek
+
+Roman
+
+Snub
+
+Side View
+Small
+
+Sharp
+
+Round
+
+Wide
+
+Natural
+
+Pointed
+
+Button
+
+Greek
+
+Roman
+
+Snub
+
+🧪 How to Use
+Run the code to launch the Gradio interface.
+
+Upload a face image (either front or side view).
+
+Choose "Front View" or "Side View" based on the image.
+
+Select a desired nose style.
+
+Click on Modify Nose.
+
+View/download the modified image.
+
+🔁 You can try different nose styles on the same image.
+
+📂 Project Structure
+graphql
+Copy
+Edit
+rhinoplasty_ai/
+│
+├── app.py                        # Main Python file with all functionality
+├── README.md                     # This documentation file
+├── deploy.prototxt               # Auto-downloaded OpenCV config file
+├── res10_300x300_ssd_iter_*.caffemodel  # Auto-downloaded OpenCV model file
+└── shape_predictor_68_face_landmarks.dat # Pre-trained Dlib file (you must download manually)
+📸 Example Results
+(Add before and after example images here if available)
+
+🧠 Acknowledgements
+Stable Diffusion Inpainting by Stability AI
+
+Dlib Face Landmark Detection
+
+OpenCV Face Detection
