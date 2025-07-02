@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rhinoplasty AI - Nose Reshaping with AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #3b82f6;
+    }
+  </style>
+</head>
+<body class="bg-blue-700 text-white font-sans">
+
+  <!-- Navigation -->
+  <nav class="container mx-auto flex items-center justify-between py-5 px-6">
+    <div class="text-2xl font-bold tracking-wide cursor-pointer">
+      <a href="#home">Rhinoplasty AI</a>
+    </div>
+    <ul class="hidden md:flex space-x-8 items-center text-sm font-medium">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+      <li><a href="#try-now" class="nav-link">Try Now</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="login.html" class="border border-white text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-blue-700 transition duration-300 hidden md:inline-block">Login</a>
+
+    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-6 pb-6 space-y-4">
+    <a href="#home" class="block py-1">Home</a>
+    <a href="#features" class="block py-1">Features</a>
+    <a href="#how-it-works" class="block py-1">How It Works</a>
+    <a href="#try-now" class="block py-1">Try Now</a>
+    <a href="#contact" class="block py-1">Contact</a>
+    <a href="login.html" class="block mt-2 py-2 text-center border border-white rounded-full">Login</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6 py-14 md:py-20">
+    <div class="md:w-1/2 space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight max-w-xl">
+        AI-Powered Rhinoplasty <br />Visualization
+      </h1>
+      <p class="text-blue-200 text-lg max-w-lg">
+        Upload your side-profile and visualize nose reshaping with advanced AI — before surgery.
+      </p>
+      <div class="flex items-center gap-6">
+        <a href="#try-now" class="bg-white text-blue-700 px-6 py-2 rounded-full text-sm font-semibold transition duration-300 hover:bg-blue-100">Try It Now</a>
+        <a href="#how-it-works" class="flex items-center gap-2 text-white hover:text-blue-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M10 8l6 4-6 4V8z" fill="currentColor" />
+          </svg>
+          Watch Demo
+        </a>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img 
+        src="https://img.freepik.com/premium-photo/profile-womans-face-with-nose-before-after-rhinoplasty-cosmetic-plastic-surgery-hump_926199-2962430.jpg"
+        alt="AI Nose Reshaping Demo"
+        class="max-w-full h-auto rounded-xl shadow-lg"
+      />
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-white text-blue-900 py-16">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Automatic Nose Detection</h3>
+          <p>Advanced AI automatically detects and isolates the nose for precision reshaping.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">12 Nose Style Options</h3>
+          <p>Select from common aesthetic styles to simulate post-surgery looks.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Side & Front View Support</h3>
+          <p>Supports both frontal and profile images for complete visualization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="bg-gray-100 text-blue-900 py-16">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h2 class="text-3xl font-bold text-center mb-8">How It Works</h2>
+      <ol class="space-y-6 text-lg list-decimal pl-6">
+        <li>Upload your facial image (side or front view).</li>
+        <li>AI automatically detects and segments your nose.</li>
+        <li>Choose a nose style you want to preview.</li>
+        <li>Get an instant result with reshaped nose only (rest of face untouched).</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Try Now Section -->
+  <section id="try-now" class="bg-blue-800 text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to see the change?</h2>
+      <p class="mb-8 text-lg">Click below to try Rhinoplasty AI instantly. No registration required.</p>
+      <a href="https://3e670d69bd808c2fa6.gradio.live" target="_blank"
+         class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-100 transition">
+        Launch Rhinoplasty AI
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white text-blue-900 py-12">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+      <p>If you have questions, suggestions, or want to collaborate, feel free to reach out! 
+        Note:This page is only for reference</p>
+      <p class="mt-4 font-semibold">Email: <a href="mailto:xxxxxxx@rhinoplastyai.com " class="text-blue-500 hover:underline">xxxxxxx@rhinoplastyai.com</a></p>
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
